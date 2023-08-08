@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-  <section id="challenge">
-    <!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="challenge">
+      <!--
       Challenge 1: below you will find a link to an image of a button. Try to
       replicate it as close as possible using only CSS code. No JS or extra
       HTML is needed for this challenge.
@@ -17,17 +23,41 @@
       Image reference: https://imgur.com/a/BYbtD1t
     -->
 
-    <style>
-      /* Your code here *******************************************************/
+      <style>
+        /* Your code here *******************************************************/
+        a {
+          display: inline-block;
+          margin-top: 10px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: rgb(77, 77, 77);
+          background-color: #e4e4e4;
+          background-image: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 0.5) 51%
+          );
+          padding: 10px 20px;
+          border-radius: 15px;
+          border: 5px solid rgb(194, 194, 194);
+          outline-style: solid;
+          outline-color: rgb(113, 113, 113);
+          outline-width: 2px;
+          box-shadow: 0px 0px 5px black inset;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a > i {
+          color: rgb(182, 182, 182);
+        }
+      </style>
 
-    </style>
-
-    <!-- Do not change the markup -->
-    <a href="#">
-      Checkout
-    </a>
-
-  </section>
-
-</body>
+      <!-- Do not change the markup -->
+      <a href="#"
+        ><i class="fa-solid fa-star"></i> Checkout
+        <i class="fa-solid fa-star"></i
+      ></a>
+    </section>
+  </body>
 </html>
